@@ -6,6 +6,10 @@
 
 string[] Array = {"hello", "2", "world", ":-)"};
 
+PrintArray(Array);
+string[] array = CreateArray(Array);
+PrintArray(array);
+
 
 string[] CreateArray(string[] arr)
 {
