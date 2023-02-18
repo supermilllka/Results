@@ -7,8 +7,28 @@
 string[] Array = {"hello", "2", "world", ":-)"};
 
 
+string[] CreateArray(string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+            count++;
+    }
 
+    string[] arr1 = new string[count];
+    int index = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            arr1[index] = arr[i];
+            index++;
+        }
+    }
 
+    return arr1;
+}
 
 void PrintArray(string[] arr)
 {
