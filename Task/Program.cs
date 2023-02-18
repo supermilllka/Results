@@ -4,12 +4,11 @@
 ["1234", "1567", "-2", "computer science"] -> ["-2"]
 ["Russia", "Denmark", "Kazan"] -> []*/
 
-string[] Array = {"hello", "2", "world", ":-)"};
+string[] Array = { "hello", "2", "world", ":-)" };
 
 PrintArray(Array);
 string[] array = CreateArray(Array);
 PrintArray(array);
-
 
 string[] CreateArray(string[] arr)
 {
